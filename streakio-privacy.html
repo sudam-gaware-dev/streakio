@@ -16,79 +16,86 @@
             color: #1F2937; /* Dark Gray */
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 16px; /* Slightly reduced padding for mobile view */
             background-color: #ffffff;
         }
-        h1 {
-            font-weight: 700;
-            color: #4F46E5; /* Your App's Indigo Accent */
-            margin-bottom: 10px;
-        }
+        /* H1 removed as per request */
         h2 {
-            font-weight: 600;
-            margin-top: 30px;
-            border-bottom: 1px solid #E5E7EB;
-            padding-bottom: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #4F46E5; /* Indigo Accent */
+            margin-top: 24px;
+            margin-bottom: 8px;
         }
         p {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             font-weight: 400;
+            font-size: 0.95rem;
         }
         ul {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             padding-left: 20px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
         }
         .footer {
-            margin-top: 50px;
+            margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #E5E7EB;
-            font-size: 0.9em;
-            color: #6B7280;
+            font-size: 0.85em;
+            color: #9CA3AF;
             text-align: center;
+        }
+        a {
+            color: #4F46E5;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> January 20, 2026</p>
+    <p style="color: #6B7280; font-size: 0.9rem;"><strong>Effective Date:</strong> January 20, 2026</p>
 
-    <p>StreakIO ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our minimalist habit tracker app collects, uses, and discloses information.</p>
+    <p>I, Sudam Gaware, built the StreakIO app as a Freemium app. This service is provided by me at no cost for basic features and is intended for use as is.</p>
 
-    <h2>1. Data Collection & Storage</h2>
-    <p>StreakIO is designed with a "Privacy First" approach:</p>
+    <p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</p>
+
+    <h2>1. Data Ownership & Storage</h2>
+    <p>StreakIO operates on a "Local-First" architecture. This means:</p>
     <ul>
-        <li><strong>Local Storage:</strong> All your habits, check-ins, and journal entries are stored 100% locally on your device using an encrypted database.</li>
-        <li><strong>No Cloud Sync:</strong> We do not transmit your personal habit data to any external servers or cloud storage.</li>
-        <li><strong>Data Ownership:</strong> You fully own your data. You can export it via CSV or delete it entirely within the app settings.</li>
+        <li><strong>Local Database:</strong> All your habits, check-in history, and journal entries are stored exclusively on your device's internal memory (using an encrypted Room Database).</li>
+        <li><strong>No Cloud Sync:</strong> I do not maintain a backend server. I do not transmit, store, or view your personal habit data.</li>
+        <li><strong>Data Control:</strong> Since the data resides solely on your device, you have complete ownership. If you uninstall the app, your data is permanently deleted from the device.</li>
     </ul>
 
-    <h2>2. App Permissions</h2>
-    <p>To function correctly, StreakIO requires specific permissions:</p>
+    <h2>2. Permissions & Usage</h2>
+    <p>To provide the core functionality of a habit tracker, the app requires specific permissions:</p>
     <ul>
-        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to send you habit reminders you have scheduled.</li>
-        <li><strong>Alarms (SCHEDULE_EXACT_ALARM):</strong> Used to ensure your reminders fire at the exact time you requested, even if the device is in doze mode.</li>
+        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver the reminders you schedule for your habits.</li>
+        <li><strong>Exact Alarms (SCHEDULE_EXACT_ALARM):</strong> Used to ensure your notifications fire precisely at the set time, regardless of battery optimization.</li>
+        <li><strong>Storage (Read/Write):</strong> Used only when you explicitly choose to export your data (PDF/CSV) or import a backup.</li>
     </ul>
 
     <h2>3. Third-Party Services</h2>
-    <p>We do not sell your data. However, the app may use standard Android services (like Google Play Services) which may collect anonymous diagnostic data (e.g., crash reports) to help us improve app stability.</p>
-
-    <h2>4. Your Rights</h2>
-    <p>Since your data is stored locally, you have full control:</p>
+    <p>While I do not personally collect your data, the app may use third-party services that may collect information used to identify your device for diagnostic purposes:</p>
     <ul>
-        <li>You can <strong>edit</strong> or <strong>delete</strong> any habit or journal entry at any time.</li>
-        <li>You can <strong>uninstall</strong> the app to permanently remove all data from your device.</li>
+        <li><strong>Google Play Services:</strong> Used for app distribution and crash reporting (e.g., if the app crashes, an anonymous log helps me fix the bug).</li>
     </ul>
 
-    <h2>5. Changes to This Policy</h2>
-    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. These changes are effective immediately after they are posted on this page.</p>
+    <h2>4. Data Backup & Export</h2>
+    <p>Because I do not store your data on a cloud server, <strong>you are responsible for your data backups</strong>. StreakIO provides features to Export your data to CSV or PDF. I strongly recommend backing up your data regularly to prevent loss in case of device failure.</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:sudamgaware2@gmail.com">sudamgaware2@gmail.com</a></p>
+    <h2>5. Children’s Privacy</h2>
+    <p>I do not knowingly collect personally identifiable information from children. Since the app does not require account creation or internet-based data submission, it is safe for all ages.</p>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>I may update my Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+    <h2>7. Contact Me</h2>
+    <p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at:</p>
+    <p><strong>Email:</strong> <a href="mailto:sudam.gaware.dev@gmail.com">sudam.gaware.dev@gmail.com</a></p>
 
     <div class="footer">
         &copy; 2026 Sudam Gaware. All rights reserved.
