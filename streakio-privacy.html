@@ -55,7 +55,7 @@
 </head>
 <body>
 
-    <p style="color: #6B7280; font-size: 0.9rem;"><strong>Effective Date:</strong> January 20, 2026</p>
+    <p style="color: #6B7280; font-size: 0.9rem;"><strong>Effective Date:</strong> February 1, 2026</p>
 
     <p>We built the StreakIO app as a Freemium app. This service is provided by us at no cost for basic features and is intended for use as is.</p>
 
@@ -64,35 +64,45 @@
     <h2>1. Data Ownership & Storage</h2>
     <p>StreakIO operates on a "Local-First" architecture. This means:</p>
     <ul>
-        <li><strong>Local Database:</strong> All your habits, check-in history, and journal entries are stored exclusively on your device's internal memory (using an encrypted Room Database).</li>
-        <li><strong>No Cloud Sync:</strong> We do not maintain a backend server. We do not transmit, store, or view your personal habit data.</li>
+        <li><strong>Local Database:</strong> All your habits, check-in history, journal entries, and <strong>daily step counts</strong> are stored exclusively on your device's internal memory (using an encrypted Room Database and SharedPreferences).</li>
+        <li><strong>No Cloud Sync:</strong> We do not maintain a backend server. We do not transmit, store, or view your personal habit or fitness data.</li>
         <li><strong>Data Control:</strong> Since the data resides solely on your device, you have complete ownership. If you uninstall the app, your data is permanently deleted from the device.</li>
     </ul>
 
     <h2>2. Permissions & Usage</h2>
-    <p>To provide the core functionality of a habit tracker, the app requires specific permissions:</p>
+    <p>To provide the core functionality of a habit tracker, the app requires specific permissions. We only request permissions that are strictly necessary for the features you use:</p>
     <ul>
-        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver the reminders you schedule for your habits.</li>
+        <li><strong>Physical Activity (ACTIVITY_RECOGNITION):</strong> Required to access the device's step counter sensor. This allows the app to automatically track and update your "Walking" habits based on your real-world movement.</li>
+        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver the reminders you schedule for your habits and daily summaries.</li>
         <li><strong>Exact Alarms (SCHEDULE_EXACT_ALARM):</strong> Used to ensure your notifications fire precisely at the set time, regardless of battery optimization.</li>
         <li><strong>Storage (Read/Write):</strong> Used only when you explicitly choose to export your data (PDF/CSV) or import a backup.</li>
     </ul>
 
-    <h2>3. Third-Party Services</h2>
+    <h2>3. Fitness Data (Step Counting)</h2>
+    <p>If you use the walking habit feature, StreakIO accesses your device's built-in step sensor. This data is:</p>
+    <ul>
+        <li>Read directly from the hardware sensor.</li>
+        <li>Stored locally to maintain your daily history and calculate streaks.</li>
+        <li><strong>Not shared</strong> with any third parties or advertising networks.</li>
+        <li>Used strictly to verify if you have met your daily step goal.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
     <p>While we do not personally collect your data, the app may use third-party services that may collect information used to identify your device for diagnostic purposes:</p>
     <ul>
         <li><strong>Google Play Services:</strong> Used for app distribution and crash reporting (e.g., if the app crashes, an anonymous log helps us fix the bug).</li>
     </ul>
 
-    <h2>4. Data Backup & Export</h2>
+    <h2>5. Data Backup & Export</h2>
     <p>Because we do not store your data on a cloud server, <strong>you are responsible for your data backups</strong>. StreakIO provides features to Export your data to CSV or PDF. We strongly recommend backing up your data regularly to prevent loss in case of device failure.</p>
 
-    <h2>5. Children’s Privacy</h2>
+    <h2>6. Children’s Privacy</h2>
     <p>We do not knowingly collect personally identifiable information from children. Since the app does not require account creation or internet-based data submission, it is safe for all ages.</p>
 
-    <h2>6. Changes to This Privacy Policy</h2>
+    <h2>7. Changes to This Privacy Policy</h2>
     <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
 
-    <h2>7. Contact Us</h2>
+    <h2>8. Contact Us</h2>
     <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
     <p><strong>Email:</strong> <a href="mailto:sudam.gaware.dev@gmail.com">sudam.gaware.dev@gmail.com</a></p>
 
